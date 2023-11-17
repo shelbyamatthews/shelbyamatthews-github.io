@@ -1,21 +1,108 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Film</title>
+    <title>Your Website Title</title>
+    <link rel="icon" type="image/x-icon" href="centerpointimage.png">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #8D76C2;
+        }
+
+        .logo {
+            max-width: 100%;
+            height: auto;
+            width: 100px;
+        }
+
+        .navbar-nav {
+            margin: auto;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-nav .nav-link {
+            font-weight: bold;
+            font-size: 16px;
+            color: #000 !important;
+        }
+
+        .custom-bg-color {
+            background-color: #EEEEEE;
+        }
+
+        .content-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .bottom-image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            max-height: 400px; /* Set the maximum height as needed */
+        }
+    </style>
 </head>
+
 <body>
 
-<h1>Correct!</h1>
-<p>After your scan is re-inverted, it is ready to be...</p>
+    <nav class="navbar navbar-expand-sm navbar-dark">
+    
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="graphicdesign.html">Graphic Design</a></li>
 
-<img src="goat.jpg" alt="inversion.png" 
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Photography</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="filmphotography.html">Film Photography</a></li>
+                    <li><a class="dropdown-item" href="digitalphotography.html">Digital Photography</a></li>
+                </ul>
+            </li>
 
-<p> ______ </p>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Art 74</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="glitch.html">Glitch</a></li>
+                    <li><a class="dropdown-item" href="mememashup.html">Meme Mashup</a></li>
+                    <li><a class="dropdown-item" href="mc3d.html">Minecraft Art</a></li>
+                    <li><a class="dropdown-item" href="3dart.html">3D Print</a></li>
+                    <li><a class="dropdown-item" href="netart.html">Net Art</a></li>
+                    <li><a class="dropdown-item" href="p5js.html">p5.JS Selfie</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
 
+    <div class="mt-0 p-4 custom-bg-color text-dark rounded">
+        <h1><strong></strong></h1>
+        <h1><center><strong>Shelby Matthews</strong></center></h1>
+    </div>
+<!-- /nav -->
 
-<a href="happy.html">Shared!</a>
-<p>or</p>
-<a href="failedroll.html">Thrown Out!</a>
+<center><h1><b>Correct!</b></h1></center>
+<center><p>After your scan is re-inverted, it is ready to be...</p></center>
+
+<center><img src="goat.jpg" alt="inversion.png"</center>
+
+<br>
+
+<a href="failedroll.html"><b>Thrown Out!</b></a>
+<br>
+<a href="happy.html"><b>Shared!</b></a></br></br>
 </body>
 
 </html>

@@ -1,60 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <title>Your Website Title</title>
+    <link rel="icon" type="image/x-icon" href="centerpointimage.png">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
 
-<title>Shelby's Portfolio</title>
-<!-- Latest compiled and minified CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        .navbar {
+            background-color: #8D76C2;
+        }
 
-<!-- Latest compiled JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+        .logo {
+            max-width: 100%;
+            height: auto;
+            width: 100px;
+        }
+
+        .navbar-nav {
+            margin: auto;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-nav .nav-link {
+            font-weight: bold;
+            font-size: 16px;
+            color: #000 !important;
+        }
+
+        .custom-bg-color {
+            background-color: #EEEEEE;
+        }
+
+        .content-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .bottom-image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            max-height: 400px; /* Set the maximum height as needed */
+        }
+    </style>
 </head>
+
 <body>
-<h1><center>Graphic Design</center></h1>
-<div class="container-fluid">
 
-<!--==========================================-->
-<!-- Nav Bar                               -->
-<!--==========================================-->
+    <nav class="navbar navbar-expand-sm navbar-dark">
+    
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="graphicdesign.html">Graphic Design</a></li>
 
-<nav class="navbar navbar-expand-sm bg-light justify-content-center">
-<ul class="navbar-nav">
-<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-<li class="nav-item"><a class="nav-link" href="graphicdesign.html">Graphic Design</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Photography</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="filmphotography.html">Film Photography</a></li>
+                    <li><a class="dropdown-item" href="digitalphotography.html">Digital Photography</a></li>
+                </ul>
+            </li>
 
-<ul class="navbar-item dropdown">
-	<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Art 74</a>
-<ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="glitch.html">Glitch</a></li>
-    <li><a class="dropdown-item" href="mememashup.html">Meme Mashup</a></li>
-    <li><a class="dropdown-item" href="mc3d.html">Minecraft Art</a></li>
-    <li><a class="dropdown-item" href="3dart.html">3D Print</a></li>
-    <li><a class="dropdown-item" href="netart.html">Net Art</a></li>
-    <li><a class="dropdown-item" href="p5js.html">p5.JS Selfie</a></li>
-</ul>
-</ul>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Art 74</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="glitch.html">Glitch</a></li>
+                    <li><a class="dropdown-item" href="mememashup.html">Meme Mashup</a></li>
+                    <li><a class="dropdown-item" href="mc3d.html">Minecraft Art</a></li>
+                    <li><a class="dropdown-item" href="3dart.html">3D Print</a></li>
+                    <li><a class="dropdown-item" href="netart.html">Net Art</a></li>
+                    <li><a class="dropdown-item" href="p5js.html">p5.JS Selfie</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
 
-<ul class="navbar-item dropdown">
-    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Photography</a>
-    <ul class="dropdown-menu">
-
-    <li><a class="dropdown-item" href="filmphotography.html">Film Photography</a></li>
-    <li><a class="dropdown-item" href="digitalphotography.html">Digital Photography</a></li>
-</ul>
-</ul>
-</div>
+    <div class="mt-0 p-4 custom-bg-color text-dark rounded">
+        <h1><strong></strong></h1>
+        <h1><center><strong>Shelby Matthews</strong></center></h1>
+    </div>
 
 <div class="mt-4 p-5 bg-white text-dark rounded">
-  <h1>Digitized</h1>
-  <p>These projects were created using Adobe Photoshop and Illustrator. </p>
+  <center><h1><b>Graphic Design</b></h1></center>
+  <center><p>These projects were created using Adobe Photoshop and Illustrator. </p></center>
 </div>
 
   <div class="container">
         <div class="row">
             <div class="col-md-3 mb-3">
                 <div class="image-container p-3">
-                    <img src="wellnessposter.jpg" alt="Image 1" class="img-fluid">
+                    <img src="newwellness.png" alt="Image 1" class="img-fluid">
                 </div>
             </div>
             <div class="col-md-3 mb-3">
