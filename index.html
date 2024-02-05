@@ -103,6 +103,14 @@
         .bottom-links img {
             width: 35px;
         }
+
+        /* Add custom styling to show SMlogo only on small screens */
+        @media (max-width: 576px) {
+            .logo-container .logo {
+                display: block; /* Show the logo for small screens */
+            }
+        }
+
     </style>
 </head>
 
@@ -110,7 +118,8 @@
 
     <nav class="navbar navbar-expand-sm navbar-dark bg-black">
         <div class="logo-container">
-            <a href="index.html"><img src="SMlogo.png" alt="LinkedIn Logo" class="logo"></a>
+            <!-- Use d-none for hiding the logo on all devices except small screens -->
+            <a href="index.html" class="d-none d-sm-block"><img src="SMlogo.png" alt="LinkedIn Logo" class="logo"></a>
         </div>
         <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
