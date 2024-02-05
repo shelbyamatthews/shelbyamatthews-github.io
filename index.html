@@ -31,7 +31,6 @@
             max-width: 100%;
             height: auto;
             width: 100px;
-            margin-right: 10px;
             padding: 0;
         }
 
@@ -67,26 +66,26 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 10px; /* Adjust the gap as needed */
-            flex-wrap: wrap; /* Enable wrapping to handle smaller screens */
+            gap: 10px;
+            flex-wrap: wrap;
         }
 
         .selfie-images img {
-            width: 100%; /* Make the image responsive for all screen sizes */
-            max-width: 1680px; /* Set the maximum width for larger screens */
-            height: auto; /* Maintain aspect ratio */
-            margin-bottom: 10px; /* Add margin between image links and text */
+            width: 100%;
+            max-width: 1680px;
+            height: auto;
+            margin-bottom: 10px;
         }
 
         .shelby-name {
-            color: #000; /* Black text color */
-            font-size: 24px; /* Adjust the font size as needed */
-            margin: 0; /* Remove default margin */
+            color: #000;
+            font-size: 24px;
+            margin: 0;
         }
 
         .featured {
-            max-width: 100%; /* Make the image responsive */
-            height: auto; /* Maintain aspect ratio */
+            max-width: 100%;
+            height: auto;
         }
 
         .bottom-text {
@@ -98,19 +97,31 @@
 
         .bottom-links {
             margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .bottom-links img {
             width: 35px;
+            margin-right: 10px;
         }
 
-        /* Add custom styling to show SMlogo only on small screens */
         @media (max-width: 576px) {
-            .logo-container .logo {
-                display: block; /* Show the logo for small screens */
+            .logo-container {
+                justify-content: center;
+                order: -1; /* Move to the top */
+                margin-bottom: 10px; /* Add margin for separation */
+            }
+
+            .navbar-nav {
+                margin-left: auto;
+            }
+
+            .logo {
+                width: 60px; /* Adjust size for mobile */
             }
         }
-
     </style>
 </head>
 
@@ -118,8 +129,7 @@
 
     <nav class="navbar navbar-expand-sm navbar-dark bg-black">
         <div class="logo-container">
-            <!-- Use d-none for hiding the logo on all devices except small screens -->
-            <a href="index.html" class="d-none d-sm-block"><img src="SMlogo.png" alt="LinkedIn Logo" class="logo"></a>
+            <a href="index.html"><img src="SMlogo.png" alt="LinkedIn Logo" class="logo"></a>
         </div>
         <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
