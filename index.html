@@ -68,10 +68,14 @@
             justify-content: center;
             align-items: center;
             gap: 10px; /* Adjust the gap as needed */
+            flex-wrap: wrap; /* Enable wrapping to handle smaller screens */
         }
 
         .selfie-images img {
-            width: 35px;
+            width: 100%; /* Make the image responsive for all screen sizes */
+            max-width: 1680px; /* Set the maximum width for larger screens */
+            height: auto; /* Maintain aspect ratio */
+            margin-bottom: 10px; /* Add margin between image links and text */
         }
 
         .shelby-name {
@@ -80,9 +84,24 @@
             margin: 0; /* Remove default margin */
         }
 
-        .featured img {
+        .featured {
             max-width: 100%; /* Make the image responsive */
             height: auto; /* Maintain aspect ratio */
+        }
+
+        .bottom-text {
+            margin-top: 20px;
+            background-color: #EEEEEE;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .bottom-links {
+            margin-top: 10px;
+        }
+
+        .bottom-links img {
+            width: 35px;
         }
     </style>
 </head>
@@ -91,7 +110,7 @@
 
     <nav class="navbar navbar-expand-sm navbar-dark bg-black">
         <div class="logo-container">
-		<a href="index.html"><img src="SMlogo.png" alt="LinkedIn Logo" class="logo"></a>
+            <a href="index.html"><img src="SMlogo.png" alt="LinkedIn Logo" class="logo"></a>
         </div>
         <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -127,15 +146,19 @@
         <h1 class="shelby-name"><strong><center>Shelby Matthews</center></strong></h1>
     </div>
 
-    <center><img src="frontimage2.png" alt="selfiepic.png" width="1680px"class="featured"></center>
-
     <div class="content-container">
         <!-- Your other content here -->
 
-        <div class="mt-0 p-4 custom-bg-color text-dark rounded">
+        <div class="selfie-images">
+            <img src="frontimage2.png" alt="selfiepic.png" class="featured">
+        </div>
+
+        <div class="mt-0 p-4 custom-bg-color text-dark rounded bottom-text">
             <p>Front-End Developer, Digital Media Artist, Designer, Engineer.</p>
-            <div class="selfie-images">
-                <a href="https://www.linkedin.com/in/shelbyamatthews/"><img src="linkedinlogo.png" alt="LinkedIn Logo"></a>
+
+            <div class="selfie-images bottom-links">
+                <a href="https://www.linkedin.com/in/shelbyamatthews/"><img src="linkedinlogo.png"
+                        alt="LinkedIn Logo"></a>
                 <a href="https://github.com/shelbyamatthews"><img src="githublogo.png" alt="GitHub Logo"></a>
             </div>
         </div>
