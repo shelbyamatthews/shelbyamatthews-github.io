@@ -19,6 +19,7 @@
             background-color: #8D76C2;
             display: flex;
             justify-content: space-between;
+            align-items: center;
             padding: 10px;
         }
 
@@ -109,17 +110,17 @@
 
         @media (max-width: 576px) {
             .logo-container {
-                justify-content: center;
-                order: -1; /* Move to the top */
-                margin-bottom: 10px; /* Add margin for separation */
+                order: -1;
+                margin-bottom: 10px;
             }
 
             .navbar-nav {
-                margin-left: auto;
+                margin: 0; /* Reset margin for mobile */
             }
 
             .logo {
-                width: 60px; /* Adjust size for mobile */
+                width: 60px;
+                margin-top: 10px; /* Add margin to center the logo */
             }
         }
     </style>
