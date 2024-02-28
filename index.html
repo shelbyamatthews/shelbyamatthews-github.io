@@ -105,12 +105,24 @@
             .navbar-nav {
                 margin-top: 10px;
             }
+
+            /* Adjusting size for home image */
+            .selfie-images img {
+                width: 120%; /* Make it larger */
+            }
+
+            /* Adjusting size for bottom three images on mobile */
+            .bottom-images img {
+                width: 80%; /* Make them smaller */
+                max-width: 100%;
+                height: auto;
+            }
         }
 
-        /* Adjusting size for bottom six images */
+        /* Adjusting size for bottom three images on desktop */
         @media (min-width: 576px) {
             .bottom-images img {
-                width: 120%; /* Adjust size as needed */
+                width: 120%; /* Maintain size */
                 max-width: 100%;
                 height: auto;
             }
@@ -122,20 +134,17 @@
 
     <nav class="navbar navbar-expand-sm navbar-dark bg-black">
         <div class="logo-container">
-		<a href="index.html"><img src="SMlogo.png" alt="LinkedIn Logo" class="logo"></a>
+            <a href="index.html"><img src="SMlogo.png" alt="LinkedIn Logo" class="logo"></a>
         </div>
         <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="information.html">Information</a></li>
-		<li class="nav-item dropdown">
+            <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Coursework</a>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="coursework.html">All</a></li>
                     <li><a class="dropdown-item" href="art74.html">Art 74</a></li>
-		    <li><a class="dropdown-item" href="art-cs108.html">Art/CS 108</a></li>
-        
-                </ul>
-            </li>
+                    <li><a class="dropdown-item" href="art-cs108.html">Art/CS 108</a></li>
                 </ul>
             </li>
         </ul>
