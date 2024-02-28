@@ -112,10 +112,9 @@
             }
 
             /* Adjusting size for bottom three images on mobile */
-            .bottom-images img {
-                width: 80%; /* Make them smaller */
-                max-width: 100%;
-                height: auto;
+            .bottom-images .col-md-3 {
+                flex: 0 0 50%; /* Make each column 50% width for mobile */
+                max-width: 50%;
             }
         }
 
